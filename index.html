@@ -17,19 +17,27 @@
       line-height: 1.6;
     }
     header {
-      background-color: #003366; /* azul escuro */
+      background-color: #d3d3d3; /* cinza claro */
       padding: 60px 20px;
       text-align: center;
       border-bottom: 1px solid #e0e0e0;
       color: white;
+      position: relative;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: auto;
     }
     header h1 {
       font-size: 2.5em;
-      color: #ffffff;
+      color: #003366;
       margin-bottom: 10px;
     }
     header p {
-      color: #f2f2f2;
+      color: #003366;
       font-size: 1.1em;
     }
     .section {
@@ -75,6 +83,16 @@
       font-size: 2em;
       margin-bottom: 20px;
     }
+    .quem-somos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+    .quem-somos img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
     footer {
       background-color: #f2f2f2;
       text-align: center;
@@ -86,13 +104,17 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Logo Gabriel Araújo" class="logo">
     <h1>Gabriel Araújo</h1>
     <p>Advocacia Personalizada em Direito da Saúde</p>
   </header>
 
   <section class="section">
     <h2>Quem Somos</h2>
-    <p>Atendimento jurídico especializado para <strong>aposentados</strong>, <strong>usuários de planos de saúde</strong>, <strong>portadores de doenças degenerativas</strong> e <strong>usuários do SUS</strong>. Priorizamos ética, empatia e resultados eficazes para defender seus direitos.</p>
+    <div class="quem-somos">
+      <img src="sua-foto.jpg" alt="Foto do advogado Gabriel Araújo">
+      <p>Atendimento jurídico especializado para <strong>aposentados</strong>, <strong>usuários de planos de saúde</strong>, <strong>portadores de doenças degenerativas</strong> e <strong>usuários do SUS</strong>. Priorizamos ética, empatia e resultados eficazes para defender seus direitos.</p>
+    </div>
   </section>
 
   <section class="section bg-light">
